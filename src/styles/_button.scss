@@ -1,0 +1,24 @@
+.btn-main {
+  padding: 8px 40px;
+
+  color: #fff;
+  background-color: var(--secondary-color);
+
+  border-radius: 6px;
+  border: none;
+
+  outline: 0;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  text-decoration: none;
+  text-align: center;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 2px 2px 20px 0px rgba(var(--secondary-color-rgb), 0.5);
+  }
+}

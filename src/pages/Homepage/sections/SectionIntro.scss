@@ -1,0 +1,23 @@
+#section-intro {
+  .container {
+    .feature-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      
+      .feature-box {
+
+        margin-bottom: 15px;
+
+        width: calc(33.3% - 30px);
+
+        @media (max-width: 991px) {
+          width: calc(50% - 30px);
+        }
+        @media (max-width: 767px) {
+          width: calc(100% - 30px);
+        }
+      }
+    }
+  }
+}

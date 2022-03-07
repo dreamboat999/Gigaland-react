@@ -1,0 +1,63 @@
+@import 'base';
+@import 'button';
+
+html,
+body {
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+  line-height: 30px;
+  line-height: 26px;
+  word-spacing: 0px;
+
+  --title-font: "DM Sans", Helvetica, Arial, sans-serif;
+  --body-font: "DM Sans", Helvetica, Arial, sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: var(--title-font);
+  font-weight: 700;
+  color: #0d0c22;
+
+  transition: .3s;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 46px;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+a {
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--secondary-color) !important;
+  }
+}
+
+img,
+svg {
+  vertical-align: middle;
+  transition: .3s;
+}
+
+img {
+  max-width: 100%;
+}

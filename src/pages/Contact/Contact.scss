@@ -1,0 +1,38 @@
+.contact-page {
+  #main-contact {
+    .container {
+      display: flex;
+      > div {
+        &:first-of-type {
+          padding-right: 10px;
+          width: 66.6%;
+
+          form {
+            textarea {
+              margin-bottom: 35px;
+              height: 224px;
+            }
+          }
+        }
+        &:last-of-type {
+          padding-left: 10px;
+          width: 33.3%;
+
+          .office-box {
+            &:first-of-type {
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 20px;
+        > div {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

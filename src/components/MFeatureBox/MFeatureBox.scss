@@ -1,0 +1,61 @@
+.feature-box {
+  position: relative;
+
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 50px;
+
+  background: rgba(var(--secondary-color-rgb), .1);
+
+  border-radius: 6px;
+  overflow: hidden;
+  transition: .7s;
+
+  .icon {
+    margin-bottom: 20px;
+    padding: 12px;
+    
+    box-sizing: border-box;
+
+    width: 56px;
+    height: 56px;
+
+    background: var(--secondary-color);
+    border-radius: 5px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      fill: white;
+    }
+  }
+  .back-icon {
+    svg {
+      transition: 2s ease;
+      
+      position: absolute;
+      background: none;
+
+      width: 240px;
+      height: 240px;
+      color: rgba(var(--secondary-color-rgb), .5);
+      right: 0;
+      top: 30%;
+      left: 50%;
+
+      opacity: .2;
+    }
+  }
+
+  &:hover {
+    background: var(--primary-color);
+
+    h3, p {
+      color: white;
+    }
+    .back-icon svg {
+      transform: rotate(-25deg);
+    }
+  }
+}

@@ -1,0 +1,48 @@
+#section-collection {
+
+  margin-bottom: 30px;
+  padding-bottom: 0;
+
+  .carousel-list {
+    position: relative;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      top: calc(50% - 22px);
+
+      width: 45px;
+      height: 45px;
+      
+      border-radius: 50%;
+      border: 1px solid gray;
+      background-color: white;
+    
+      font-size: 20px;
+      font-weight: bold;
+
+      cursor: pointer;
+
+      &[data-direction=left] {
+        transform: translateX(-17px);
+      
+        &::before {
+          content: "<";
+          font-family: "arial";
+        }
+      }
+
+      &[data-direction=right] {
+        transform: translateX(-27px);
+        
+        &::before {
+          content: ">";
+          font-family: "arial";
+        }
+      }
+    }
+  }
+}

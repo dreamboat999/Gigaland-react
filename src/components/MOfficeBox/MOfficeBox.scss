@@ -1,0 +1,14 @@
+.office-box {
+  padding: 40px;
+
+  border-radius: 3px;
+  span {
+    display: block;
+    margin-bottom: 5px;
+
+    svg {
+      margin-right: 15px;
+      margin-left: 5px;
+    }
+  }
+}

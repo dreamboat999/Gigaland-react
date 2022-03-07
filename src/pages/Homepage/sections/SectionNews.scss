@@ -1,0 +1,21 @@
+#section-news {
+  .container {
+    .news-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      flex-wrap: wrap;
+      .news-item {
+        width: 33%;
+        
+        @media (max-width: 991px) {
+          width: 50%;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

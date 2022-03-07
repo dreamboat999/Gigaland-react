@@ -1,0 +1,45 @@
+#section-hero {
+
+  display: flex;
+  align-items: center;
+
+  height: 100vh;
+  min-height: 600px;
+  
+  padding: 0px;
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+      width: 50%;
+
+      padding: 0 10px;
+    }
+
+    .bg-shape{
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -2;
+    }
+    
+    h4 {
+      color: var(--secondary-color);
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 767px) {
+      > div {
+        width: 100%;
+      }
+      .hero-nft-container {
+        display: none;
+      }
+    }
+  }
+}

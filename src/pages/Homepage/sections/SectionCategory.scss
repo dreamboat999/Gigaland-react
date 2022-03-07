@@ -1,0 +1,27 @@
+#section-category, #section-community {
+  .container {
+
+    .card-list {
+      display: flex;
+      flex-wrap: wrap;
+      
+      .card {
+        flex-grow: 1;
+
+        width: 16.6%;
+
+        @media (max-width: 767px) {
+          width: 33.3%;
+        }
+      }
+    }
+  }
+}
+
+#section-category {
+  padding: 0px;
+}
+
+#section-community {
+  padding-bottom: 0px;
+}
